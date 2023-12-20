@@ -1,12 +1,31 @@
-[gd_scene load_steps=3 format=3 uid="uid://nyuhcfhamumu"]
+[gd_scene load_steps=5 format=3 uid="uid://nyuhcfhamumu"]
 
 [ext_resource type="PackedScene" uid="uid://bk3milfndhknf" path="res://scenes/player.tscn" id="1_mbmsl"]
 [ext_resource type="PackedScene" uid="uid://br0p8kvvymac5" path="res://scenes/ground.tscn" id="2_xvw58"]
 
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_f8mfi"]
+normal = Vector2(1, 0)
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_3pufk"]
+normal = Vector2(-1, 0)
+
 [node name="Level" type="Node2D"]
 
 [node name="player" parent="." instance=ExtResource("1_mbmsl")]
-position = Vector2(133, 273)
+position = Vector2(637, 361)
 
 [node name="ground" parent="." instance=ExtResource("2_xvw58")]
 position = Vector2(578, 565)
+
+[node name="bounds" type="Node2D" parent="."]
+
+[node name="left" type="StaticBody2D" parent="bounds"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="bounds/left"]
+shape = SubResource("WorldBoundaryShape2D_f8mfi")
+
+[node name="right" type="StaticBody2D" parent="bounds"]
+position = Vector2(1154, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="bounds/right"]
+shape = SubResource("WorldBoundaryShape2D_3pufk")
