@@ -6,5 +6,7 @@
 [node name="Level" type="Node2D"]
 
 [node name="player" parent="." instance=ExtResource("1_mbmsl")]
+position = Vector2(133, 273)
 
 [node name="ground" parent="." instance=ExtResource("2_xvw58")]
+position = Vector2(578, 565)

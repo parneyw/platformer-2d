@@ -1,11 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://br0p8kvvymac5"]
+[gd_scene load_steps=3 format=3 uid="uid://br0p8kvvymac5"]
 
-[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_r24is"]
+[ext_resource type="Texture2D" uid="uid://du37eduwp8iuf" path="res://assets/ground.png" id="1_cifjn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t608m"]
+size = Vector2(1162, 127.5)
 
 [node name="ground" type="StaticBody2D"]
+scale = Vector2(1, 1.35)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("WorldBoundaryShape2D_r24is")
-one_way_collision = true
+shape = SubResource("RectangleShape2D_t608m")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(2.49999, -11.4815)
+scale = Vector2(0.544907, 0.490463)
+texture = ExtResource("1_cifjn")
