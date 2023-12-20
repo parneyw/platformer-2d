@@ -13,8 +13,8 @@ position = Vector2(0, -3.71)
 scale = Vector2(2.98, 3.45)
 shape = SubResource("CapsuleShape2D_pgdxt")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="sprite" type="Sprite2D" parent="."]
 scale = Vector2(0.275, 0.275)
 texture = ExtResource("2_immmh")
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="camera" type="Camera2D" parent="."]
