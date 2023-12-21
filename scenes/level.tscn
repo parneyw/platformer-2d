@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://nyuhcfhamumu"]
+[gd_scene load_steps=5 format=3 uid="uid://nyuhcfhamumu"]
 
 [ext_resource type="PackedScene" uid="uid://bk3milfndhknf" path="res://scenes/player.tscn" id="1_mbmsl"]
 [ext_resource type="PackedScene" uid="uid://br0p8kvvymac5" path="res://scenes/terrain.tscn" id="2_xvw58"]
 [ext_resource type="Texture2D" uid="uid://ut8qdx8iyy3v" path="res://assets/mfkr.jpg" id="3_hptr2"]
+[ext_resource type="Script" path="res://scenes/bg.gd" id="4_n0k81"]
 
 [node name="Level" type="Node2D"]
 
@@ -19,9 +20,11 @@ follow_viewport_enabled = true
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
 motion_scale = Vector2(0.1, 0.1)
 
-[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+[node name="bg" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+modulate = Color(0.180392, 0, 0.360784, 1)
 texture_repeat = 2
-scale = Vector2(0.4, 0.4)
+scale = Vector2(0.075, 0.075)
 texture = ExtResource("3_hptr2")
 region_enabled = true
 region_rect = Rect2(0, 0, 1e+06, 1e+06)
+script = ExtResource("4_n0k81")
