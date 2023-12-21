@@ -16,6 +16,7 @@ position = Vector2(637, 361)
 
 [node name="ground" parent="." instance=ExtResource("2_xvw58")]
 position = Vector2(578, 565)
+scale = Vector2(1, 1)
 
 [node name="bounds" type="Node2D" parent="."]
 
