@@ -4,6 +4,8 @@ extends CharacterBody2D
 const SPEED = 600.0
 const JUMP_VELOCITY = -600.0
 
+var speed = 0.0
+
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
@@ -30,11 +32,11 @@ func _physics_process(delta):
 		_sprite.flip_h = false
 	
 	if direction:
-		velocity.x = direction * SPEED
+		velocity.x = move_toward(velocity.x, direction * SPEED, SPEED/15)
 		if is_on_floor():
 			_sprite.play("run")
 	elif direction == 0:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
+		velocity.x = move_toward(velocity.x, 0, SPEED/8)		
 		if is_on_floor():
 			_sprite.play("idle")
 	
