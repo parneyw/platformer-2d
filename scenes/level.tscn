@@ -13,6 +13,7 @@ normal = Vector2(-1, 0)
 
 [node name="player" parent="." instance=ExtResource("1_mbmsl")]
 position = Vector2(637, 361)
+scale = Vector2(1.245, 1.245)
 
 [node name="ground" parent="." instance=ExtResource("2_xvw58")]
 position = Vector2(578, 565)
