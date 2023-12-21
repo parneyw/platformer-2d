@@ -36,7 +36,7 @@ func _physics_process(delta):
 		if is_on_floor():
 			_sprite.play("run")
 	elif direction == 0:
-		velocity.x = move_toward(velocity.x, 0, SPEED/8)		
+		velocity.x = move_toward(velocity.x, 0, SPEED/8)
 		if is_on_floor():
 			_sprite.play("idle")
 	
