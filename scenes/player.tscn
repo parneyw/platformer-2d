@@ -86,7 +86,10 @@ shape = SubResource("RectangleShape2D_5c4bg")
 
 [node name="camera" type="Camera2D" parent="."]
 position = Vector2(0, -56)
-offset = Vector2(0, -15.825)
+position_smoothing_enabled = true
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+drag_vertical_offset = -0.55
 
 [node name="sprite" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.06, 0.06)
