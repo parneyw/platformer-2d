@@ -17,7 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://crs71ar6qv6g5" path="res://assets/player/run/frame_11.png" id="15_g08sn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5c4bg"]
-size = Vector2(50, 109)
+size = Vector2(83, 109)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_7bpbq"]
 animations = [{
@@ -77,19 +77,20 @@ animations = [{
 "speed": 12.0
 }]
 
-[node name="player" type="CharacterBody2D"]
+[node name="player" type="CharacterBody2D" groups=["Player"]]
 script = ExtResource("1_sjfap")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-5, 20.5)
+position = Vector2(-1.5, 20.5)
 shape = SubResource("RectangleShape2D_5c4bg")
 
 [node name="camera" type="Camera2D" parent="."]
 position = Vector2(0, -56)
 position_smoothing_enabled = true
 drag_horizontal_enabled = true
-drag_vertical_enabled = true
-drag_vertical_offset = -0.55
+drag_vertical_offset = -0.1
+drag_top_margin = 0.0
+drag_bottom_margin = 0.0
 
 [node name="sprite" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.06, 0.06)

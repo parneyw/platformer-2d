@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 
-const SPEED = 600.0
+const SPEED = 400.0
 const JUMP_VELOCITY = -800.0
 
 var speed = 0.0
@@ -41,3 +41,7 @@ func _physics_process(delta):
 			_sprite.play("idle")
 	
 	move_and_slide()
+
+
+func game_over():
+	position = Vector2(0.0, 0.0)
