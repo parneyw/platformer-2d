@@ -1,0 +1,116 @@
+[gd_resource type="SpriteFrames" load_steps=21 format=3 uid="uid://gri2mitus3sr"]
+
+[ext_resource type="Texture2D" uid="uid://lo5jrtpv1d48" path="res://assets/player/jump/jump_06.png" id="1_6ncwf"]
+[ext_resource type="Texture2D" uid="uid://bd24ijntkge83" path="res://assets/player/jump/jump_04.png" id="2_jo7hr"]
+[ext_resource type="Texture2D" uid="uid://cbb3xyrega6sk" path="res://assets/player/jump/jump_05.png" id="3_5lpds"]
+[ext_resource type="Texture2D" uid="uid://b72nic34ba8cc" path="res://assets/player/idle/idleframe_01.png" id="4_q78ck"]
+[ext_resource type="Texture2D" uid="uid://rtjv6pgyapo1" path="res://assets/player/idle/idleframe_02.png" id="5_oukct"]
+[ext_resource type="Texture2D" uid="uid://cgolcfo8anu2e" path="res://assets/player/idle/idleframe_03.png" id="6_e6vc0"]
+[ext_resource type="Texture2D" uid="uid://ckxkqwaoxhht0" path="res://assets/player/jump/jump_01.png" id="7_cap30"]
+[ext_resource type="Texture2D" uid="uid://bcmhqme4kjldk" path="res://assets/player/jump/jump_02.png" id="8_xdabx"]
+[ext_resource type="Texture2D" uid="uid://dlfw1ffi3w7dw" path="res://assets/player/jump/jump_03.png" id="9_n68u8"]
+[ext_resource type="Texture2D" uid="uid://c67ipw31w0suh" path="res://assets/player/run/frame_01.png" id="10_mqn6j"]
+[ext_resource type="Texture2D" uid="uid://m6ufn53mpde" path="res://assets/player/run/frame_02.png" id="11_gckix"]
+[ext_resource type="Texture2D" uid="uid://dj3jdjdv8gvt0" path="res://assets/player/run/frame_03.png" id="12_nxd07"]
+[ext_resource type="Texture2D" uid="uid://bxvxpm62djghg" path="res://assets/player/run/frame_04.png" id="13_0bj57"]
+[ext_resource type="Texture2D" uid="uid://k3pripl6pam8" path="res://assets/player/run/frame_05.png" id="14_6av2u"]
+[ext_resource type="Texture2D" uid="uid://lhh7n7kgb3os" path="res://assets/player/run/frame_06.png" id="15_d30kv"]
+[ext_resource type="Texture2D" uid="uid://dthjyewrkbx2e" path="res://assets/player/run/frame_07.png" id="16_f0e33"]
+[ext_resource type="Texture2D" uid="uid://br1wlncwkyioy" path="res://assets/player/run/frame_08.png" id="17_1p6el"]
+[ext_resource type="Texture2D" uid="uid://c7tdk38t57miv" path="res://assets/player/run/frame_09.png" id="18_h2k0e"]
+[ext_resource type="Texture2D" uid="uid://cq4mdaje6r212" path="res://assets/player/run/frame_10.png" id="19_jtvgs"]
+[ext_resource type="Texture2D" uid="uid://crs71ar6qv6g5" path="res://assets/player/run/frame_11.png" id="20_w71gr"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_6ncwf")
+}],
+"loop": false,
+"name": &"fall",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_jo7hr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_5lpds")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_6ncwf")
+}],
+"loop": false,
+"name": &"fall_transition",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 12.0,
+"texture": ExtResource("4_q78ck")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_oukct")
+}, {
+"duration": 12.0,
+"texture": ExtResource("6_e6vc0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_oukct")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_cap30")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_xdabx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_n68u8")
+}],
+"loop": false,
+"name": &"jump",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_mqn6j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_gckix")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_nxd07")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_0bj57")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_6av2u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_d30kv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_f0e33")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_1p6el")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_h2k0e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_jtvgs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_w71gr")
+}],
+"loop": true,
+"name": &"run",
+"speed": 12.0
+}]
